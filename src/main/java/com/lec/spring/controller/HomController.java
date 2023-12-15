@@ -14,8 +14,6 @@ public class HomController {
     @Value("${env.info}")
     private String envInfo;
 
-
-
     @GetMapping("/aws/v2")
     public String hello(@RequestParam(defaultValue = "1") Integer num){
         if (num==1){
@@ -25,6 +23,6 @@ public class HomController {
         }else if (num == 0) {
             log.warn("["+envInfo+"] /aws/v2 warn로그 #########################");
         }
-        return "<h1>AWS 배포 v2</h1>";
+        return "<h1>AWS 재배포 v2</h1>";
     }
 }

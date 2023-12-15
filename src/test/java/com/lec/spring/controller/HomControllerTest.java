@@ -21,7 +21,7 @@ class HomControllerTest {
     void hello(){
         System.out.println("port = " + port);
         ResponseEntity<String> response =  restTemplate.getForEntity("/aws/v2", String.class);
-        assertEquals("<h1>AWS 배포 v2</h1>", response.getBody());
+        assertEquals("<h1>AWS 재배포 v2</h1>", response.getBody());
     }
 
 
